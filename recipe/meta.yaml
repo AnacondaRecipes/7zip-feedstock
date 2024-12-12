@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://downloads.sourceforge.net/project/sevenzip/7-Zip/{{ version }}/7z{{ version.replace('.', '') }}-src.7z
-  sha256: 9ba70a5e8485cf9061b30a2a84fe741de5aeb8dd271aab8889da0e9b3bf1868e
+  sha256: a33569eed0ce628fb9ceb9f46ac257d3f36b3966471667e65ba01878673c9faa
 
 build:
   number: 0
