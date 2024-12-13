@@ -11,20 +11,17 @@ source:
 
 build:
   number: 0
-  skip: true  # [py<38]
+  skip: true  # [not win or win32
 
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - {{ stdlib('c') }}
   run_constrained:
     - 7za <0.0.0a
 
 test:
-  imports:
-    - 7zip
   commands:
-    - 7zg.exe
+    - 7z.exe
     - 7za.exe
     - 7zr.exe
 
