@@ -22,7 +22,7 @@ requirements:
 
 test:
   imports:
-
+    - 7zip
   commands:
     - 7zg.exe
     - 7za.exe
