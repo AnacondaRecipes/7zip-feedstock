@@ -27,7 +27,7 @@ test:
 
 about:
   home: https://www.7-zip.org/
-  license: LGPL-2.1-or-later AND LGPL-2.1-or-later WITH unRAR-restriction
+  license: LGPL-3.0
   license_family: LGPL
   license_file:
     - LICENSE.txt
