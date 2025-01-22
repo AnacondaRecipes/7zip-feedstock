@@ -1,5 +1,5 @@
 {% set name = "7zip" %}
-{% set version = "19.00" %}
+{% set version = "24.09" %}
 
 package:
   name: {{ name }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://downloads.sourceforge.net/project/sevenzip/7-Zip/{{ version }}/7z{{ version.replace('.', '') }}-src.7z
-  sha256: 9ba70a5e8485cf9061b30a2a84fe741de5aeb8dd271aab8889da0e9b3bf1868e
+  sha256: a33569eed0ce628fb9ceb9f46ac257d3f36b3966471667e65ba01878673c9faa
 
 build:
-  number: 2
+  number: 0
   skip: true  # [not win or win32]
 
 requirements:
@@ -27,13 +27,16 @@ test:
 
 about:
   home: https://www.7-zip.org/
-  license: LGPL-2.1-or-later AND LGPL-2.1-or-later WITH unRAR-restriction
+  license: LGPL-3.0
+  license_family: LGPL
   license_file:
     - LICENSE.txt
     - UNRAR_LICENSE.txt
+  description: |
+    7-Zip is a file archiver with a high compression ratio.
   summary: 7-Zip is a file archiver with a high compression ratio.
   dev_url: https://sourceforge.net/p/sevenzip/
-
+  doc_url: https://www.7-zip.org
 extra:
   recipe-maintainers:
     - wolfv
