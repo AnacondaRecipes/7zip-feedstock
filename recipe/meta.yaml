@@ -1,5 +1,5 @@
 {% set name = "7zip" %}
-{% set version = "24.09" %}
+{% set version = "25.01" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://downloads.sourceforge.net/project/sevenzip/7-Zip/{{ version }}/7z{{ version.replace('.', '') }}-src.7z
-  sha256: a33569eed0ce628fb9ceb9f46ac257d3f36b3966471667e65ba01878673c9faa
+  sha256: 2aed39b8f1238464475e9de7dda169a5e873a1dc8bbf4f664b943eaba5620181
 
 build:
   number: 0
@@ -15,6 +15,7 @@ build:
 
 requirements:
   build:
+    - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
   run_constrained:
     - 7za <0.0.0a
