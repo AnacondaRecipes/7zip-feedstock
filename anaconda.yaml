@@ -1,5 +1,7 @@
 anaconda_config_version: 1
 upstream_sources:
-  - webpage:
-      url: https://sourceforge.net/projects/sevenzip/files/7-Zip/
-      regex: 7-Zip/([\d.]+)/
+  - github:
+      identifier: ip7z/7zip
+      use_max_tag: true
+      from_pattern: ^(\d+\.\d+)$
+      to_pattern: \1
