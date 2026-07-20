@@ -1,16 +1,16 @@
 {% set name = "7zip" %}
-{% set version = "25.01" %}
+{% set version = "26.02" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://downloads.sourceforge.net/project/sevenzip/7-Zip/{{ version }}/7z{{ version.replace('.', '') }}-src.7z
-  sha256: 2aed39b8f1238464475e9de7dda169a5e873a1dc8bbf4f664b943eaba5620181
+  url: https://github.com/ip7z/7zip/releases/download/{{ version }}/7z{{ version.replace('.', '') }}-src.7z
+  sha256: c7502dd4557481f52ccf1b3e680329f1fdd207e79a25544afeb3106325474944
 
 build:
-  number: 1
+  number: 0
   skip: true  # [not win or win32]
 
 requirements:
@@ -36,7 +36,7 @@ about:
   description: |
     7-Zip is a file archiver with a high compression ratio.
   summary: 7-Zip is a file archiver with a high compression ratio.
-  dev_url: https://sourceforge.net/p/sevenzip/
+  dev_url: https://github.com/ip7z/7zip
   doc_url: https://www.7-zip.org
 extra:
   recipe-maintainers:
